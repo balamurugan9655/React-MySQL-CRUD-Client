@@ -2,6 +2,7 @@ import React ,{useState,useEffect} from "react";
 import axios from "axios";
 import { useNavigate,useParams } from "react-router-dom";
 
+const API_URL = "https://react-mysql-curd-server.onrender.com";
 
 const EditPost = () => {
     const [title,setTitle]=useState('');
@@ -12,7 +13,7 @@ const EditPost = () => {
     useEffect(()=>{
         const fetchPost=async()=>{
             try {
-                const res = await axios.get(`http://localhost:3001/getpost/${id}`)
+                const res = await axios.get(`${API_URL}/getpost/${id}`)
                 setTitle(res.data[0].title)
                 setBody(res.data[0].body)
             } catch (err) {
@@ -25,7 +26,7 @@ const EditPost = () => {
     const handleSubmit=async(e)=> {
         e.preventDefault();
         try{
-            await axios.put(`http://localhost:3001/updatepost/${id}`,{title,body})
+            await axios.put(`${API_URL}/updatepost/${id}`,{title,body})
             navigate("/");
             console.log("update frontend...")
         } catch(err) {

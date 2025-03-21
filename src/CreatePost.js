@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Button, Card, CardBody, CardHeader, Container, FormControl, FormGroup, FormLabel } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
+const API_URL = "https://react-mysql-curd-server.onrender.com";
 
 const CreatePost = () => {
 
@@ -13,7 +14,7 @@ const CreatePost = () => {
     // data inserted..
     const handleSubmit=(e)=>{
         e.preventDefault();
-        axios.post('http://localhost:3001/addpost',{title,body})
+        axios.post(`${API_URL}/addpost`,{title,body})
         .then((response)=>{
             console.log(response.data)
             navigate('/');

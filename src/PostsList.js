@@ -2,17 +2,22 @@ import React,{useState,useEffect} from "react";
 import axios from "axios";
 import {Link} from "react-router-dom";
 
+const API_URL = "https://react-mysql-curd-server.onrender.com";
+
 const PostsList = () => {
     const[posts,setPosts]=useState([]);
+    
 
     useEffect(()=>{
-        axios.get('http://localhost:3001/getposts')
+        console.log("API URL:", API_URL)
+        axios.get(`${API_URL}/getposts`)
         .then(response => {setPosts(response.data)})
+        .catch((error) => console.error("Error fetching posts:", error));
     },[]);
 
     const handleDelete=async(id) => {
         try {
-            await axios.delete(`http://localhost:3001/deleteposts/${id}`)
+            await axios.delete(`${API_URL}/deleteposts/${id}`)
             setPosts(posts.filter(post=> post.id!==id))
         } catch(err) {
             console.log(err);
