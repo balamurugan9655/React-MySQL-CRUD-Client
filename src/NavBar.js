@@ -16,9 +16,9 @@ const NavigationBar=()=>{
                     <LinkContainer to="/create">
                      <Nav.Link>CreatePost</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to="/edit/:id">
+                    {/* <LinkContainer to="/edit/:id">
                      <Nav.Link>EditPost</Nav.Link>
-                    </LinkContainer>
+                    </LinkContainer> */}
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
