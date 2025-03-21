@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-MySQL-CURD-Client/static/css/main.cf8cb218.css",
+    "main.js": "/React-MySQL-CURD-Client/static/js/main.b2e321b5.js",
+    "index.html": "/React-MySQL-CURD-Client/index.html",
+    "main.cf8cb218.css.map": "/React-MySQL-CURD-Client/static/css/main.cf8cb218.css.map",
+    "main.b2e321b5.js.map": "/React-MySQL-CURD-Client/static/js/main.b2e321b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf8cb218.css",
+    "static/js/main.b2e321b5.js"
+  ]
+}
