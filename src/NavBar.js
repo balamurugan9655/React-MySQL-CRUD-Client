@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const NavigationBar=()=>{
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
-            <Navbar.Brand href="/">CRUD APP</Navbar.Brand>
+            <Navbar.Brand href="/React-MySQL-CRUD-Client">CRUD APP</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
