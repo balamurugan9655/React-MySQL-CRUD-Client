@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/React-MySQL-CRUD-Client/static/css/main.cf8cb218.css",
-    "main.js": "/React-MySQL-CRUD-Client/static/js/main.1101fdab.js",
+    "main.js": "/React-MySQL-CRUD-Client/static/js/main.250a4cfc.js",
     "index.html": "/React-MySQL-CRUD-Client/index.html",
     "main.cf8cb218.css.map": "/React-MySQL-CRUD-Client/static/css/main.cf8cb218.css.map",
-    "main.1101fdab.js.map": "/React-MySQL-CRUD-Client/static/js/main.1101fdab.js.map"
+    "main.250a4cfc.js.map": "/React-MySQL-CRUD-Client/static/js/main.250a4cfc.js.map"
   },
   "entrypoints": [
     "static/css/main.cf8cb218.css",
-    "static/js/main.1101fdab.js"
+    "static/js/main.250a4cfc.js"
   ]
 }
